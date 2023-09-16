@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ---------UI/Ux компоненты ----------*/
+.MyBtn{
+    padding: 5px 15px;
+    border: 1px solid teal;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.MyBtn:hover,.MyBtn:focus,.MyBtn:active{
+    background-color: teal;
+    color: white;
+}
+.MyInp{
+    padding: 5px 15px;
+    border: 1px solid teal;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ---------Стили поста ----------*/
+.post__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid teal;
+    background-color: transparent;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.title{
+    font-weight: 700;
+}
+/* ---------Форма ----------*/
+.form__wrap{
+    display: flex;
+    flex-direction: column;
+    width: 535px;
+    margin: 0 auto;
+}
+/* ---------Поиск ----------*/
+.seartch{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+.seartch input{
+ margin-bottom: 0; 
+ margin-right: 30px; 
+ width: 370px; 
+}
+/* --------Окно создания поста ----*/
+
+.module{
+    display: none;
+    position: relative;
+    background: rgb(0, 0, 0,0.5);
+}
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.content{
+    padding: 25px;
+    background-color: white;
+    border-radius: 16px;
+}
